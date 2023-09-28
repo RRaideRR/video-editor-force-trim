@@ -11,6 +11,32 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "react-native-imglysdk",
+        {
+          "android": {
+            "modules": [
+              "ui:core",
+              "ui:transform",
+              "ui:text",
+              "ui:sticker",
+              "ui:transform",
+              "ui:video-trim",
+              "ui:video-composition",
+              "ui:giphy-sticker",
+              "assets:font-basic",
+              "assets:sticker-shapes",
+              "assets:sticker-emoticons",
+              "assets:sticker-animated",
+              "backend:sticker-animated",
+              "backend:sticker-smart"
+            ],
+            "kotlinGradlePluginVersion": "1.8.10"
+          }
+        }
+      ]
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,10 +47,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.raider.VideoEditorForceTrim"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "592d9031-10d7-4870-8e07-f8f46fa95bab"
+      }
     }
   }
 }
